@@ -173,7 +173,7 @@ void for_each_element_in(char* directory_path,  void (*apply_function) (struct d
      }
   }
   else {
-    printf("Errore nella scansione della cartella\nNon è stato possibile aprire il file %s\n%s\n", directory_path, strerror(errno));
+    printf("Error in directory scan\nCannot open file %s\n%s\n", directory_path, strerror(errno));
   }
   closedir(file);
 }
@@ -338,7 +338,7 @@ FILE* open_towrite_file(char *name, char *fasta_name, char *directory_path) {
   file_to_open = fopen(append_filename_to_path(directory_path, filename), "w");
 
   if (file_to_open == NULL) {
-    printf("Non è stato possibile aprire in scrittura il file %s: %s\n\n", filename, strerror(errno));
+    printf("Cannot open file in writing mode %s: %s\n\n", filename, strerror(errno));
   }
 
   return file_to_open;

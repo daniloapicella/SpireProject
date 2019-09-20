@@ -2,19 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-//#include <pthread.h>
 
 //struct of any list's node, generally nodes are considered in last-first order
 typedef struct node {
     char *factor;
     struct node *next;
 } node_t;
-/*
-typedef struct node_th {
-	pthread_t tid;
-	struct node_th *next;
-} node_thread;
-*/
+
 typedef struct param {
 	char *w;
 	char *list_alphabet;
@@ -207,17 +201,17 @@ char *list_to_string(node_t *list, int reverse) { //0 true 1 false
 }
 
 void print_statistics() {
-  printf("\n\nNumero di read: %d\n", number_of_reads);
-  printf("Lunghezza media di read: %d\n", read_length_cont/number_of_reads);
-  printf("Lunghezza massima di read: %d\n", max_read_length);
-  printf("Lunghezza minima di read: %d\n", min_read_length);
+  printf("\n\nNumber of reads: %d\n", number_of_reads);
+  printf("Average read length: %d\n", read_length_cont/number_of_reads);
+  printf("Maximum read length: %d\n", max_read_length);
+  printf("Mimimum read length: %d\n", min_read_length);
   printf("\n");
 
-  printf("Numbero di fattori: %d\n", number_of_factors);
-  printf("Numero medio di fattori per read: %d\n", number_of_factors/number_of_reads);
-  printf("Lunghezza media dei fattori: %d\n", factors_length_sum/number_of_factors);
-  printf("Lunghezza massima fattori: %d\n", max_factor_length);
-  printf("Numero di fattori che superano la lunghezza massima: %d\n", number_of_longer_factors);
+  printf("Number of factors: %d\n", number_of_factors);
+  printf("Average number of factors for read: %d\n", number_of_factors/number_of_reads);
+  printf("Average factors' length: %d\n", factors_length_sum/number_of_factors);
+  printf("Maximum factors' length: %d\n", max_factor_length);
+  printf("Number of factors exceeding maximum length: %d\n", number_of_longer_factors);
 }
 
 

@@ -5,36 +5,34 @@ char *inputString(FILE* fp, size_t size, char ending_character);
 int main() {
    char *root_path;     //...of the directory to process
 
-// do_unit_testing();
-// do_integration_testing();
   /*Catching input from the user*/
 
-  printf("Benvenuto nel programma sequenziale Spire\n\n");
+  printf("Welcone in Spire\n\n");
 
-  printf("Fornisca la directory dei file fasta\n");
-  root_path = inputString(stdin, 100, '\n'); 
+  printf("Insert directory path of the fasta files\n");
+  root_path = inputString(stdin, 100, '\n');
 
   do {
-    printf("Fornisca una delle seguenti opzioni di fattorizzazione\n");
+    printf("Choose one of the following options\n");
     printf("1.CFL\n");
     printf("2.ICFL\n");
-    printf("3.CFL seguito da ICFL\n");
-    printf("4.ICFL seguito da CFL\n");
-    printf("Risposta:\n");
+    printf("3.CFL first and ICFL then\n");
+    printf("4.ICFL first and CFL then\n");
+    printf("Answer:\n");
     scanf("%d", &fact_choice);
     if (fact_choice >= 1 && fact_choice <= 4)
       break;
     else
-      printf("Spiacente, la risposta data non è nelle opzioni possibili\n\n");
+      printf("Sorry, invalid choice. Try again\n\n");
   } while (1);
 
   if (fact_choice > 2) {
-    printf("Fornisca dimensione massima di ciascun fattore\n");
+    printf("Insert maximum factors' length\n");
     scanf("%d", &max_fact_length);
   }
 
   communicate_max_fact_length(max_fact_length);
-  printf("fornisca il numero di elementi per ciascuna finestra per le k-fingerprint\n");
+  printf("Insert maximum number of elements for each k-fingerprint window\n");
   scanf("%d", &window_dimension);
 
   time_t m;
@@ -45,7 +43,7 @@ int main() {
   print_statistics();
 
   m = difftime(time(NULL), now);
-  printf("tempo totale in secondi: %ld\n",m);
+  printf("Total processing time in seconds: %ld\n",m);
 
   if (log_file != NULL)
     fclose(log_file);
