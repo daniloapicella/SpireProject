@@ -82,7 +82,7 @@ Why 0 1 1 0? Because the ones refer to 'CA', 'GTA' that have been produced in th
 
 # How to run
 
-To see the program in action enter into the directory in which this file is located and run "./run" in terminal. Give the path to the "testsample" in this directory, select the factorization kind you want, define the dimension of the factors (30 or 50 are suggested), the k-fingerprint (4 is suggested). You will find all the results in the sample subdirectories.
+To see the program in action enter into the directory, run "./run" in terminal. Give the path to the "testsample" (the same path of the directory in which you ran "./run"), select the factorization kind you want, define the dimension of the factors (30 or 50 are suggested), the k-fingerprint (4 is suggested). You will find all the results in the sample subdirectories.
 
 
 
