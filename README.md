@@ -1,4 +1,4 @@
-Welcome in Spire-Project.
+# Welcome in Spire-Project.
 
 It's aim is to provide a way to re-build a genom starting from casual reads of it's sections.
 
@@ -6,8 +6,7 @@ This program is part of a larger one and has the purpose of applying the so call
 
 Following a description of how it works and how to run it.
 
-HOW IT WORKS
-
+# How it works
 The program takes as first input a path to a location where the samples are contained. This location is a directory that I will call "bunch" for ease and has this structure.
 
 >directory-bunch
@@ -81,7 +80,7 @@ and having only one iteration(cause the window size is 4 and it can't move to ri
 
 Why 0 1 1 0? Because the ones refer to 'CA', 'GTA' that have been produced in the second factorization process. Why iteration 0? Because window hasn't moved.
 
-HOW TO RUN
+# How to run
 
 To see the program in action enter into the directory in which this file is located and run "./run" in terminal. Give the path to the "testsample" in this directory, select the factorization kind you want, define the dimension of the factors (30 or 50 are suggested), the k-fingerprint (4 is suggested). You will find all the results in the sample subdirectories.
 
