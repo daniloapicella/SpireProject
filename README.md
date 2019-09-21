@@ -35,7 +35,7 @@ For each factorization, a string describing the dimension of its factors (or sub
 
 It simply consists of the identifier header and dimensions of the read factors. Each factor dimension is called "fingerprint".
 
-Finally if user has chosen either "cfl_icfl" or "icfl_cfl"(cfl factorization process followed by icfl one or viceversa) factorization, a k-fingerprint file is created containing, for each fingerprint string, a set of strings as the following:
+Finally a k-fingerprint file is created containing, for each fingerprint string, a set of strings as the following:
 
 5 3 7 0 $ 0 0 0 0 $ >header1 0
 
