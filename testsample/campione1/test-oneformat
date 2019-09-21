@@ -1,3 +1,0 @@
->header1 $ 5,3,7 $ [ "CGTTG" "CGG" "AAAGGTC" ]
->header2 $ 2,1,1,1,1,1,10 $ [ "GT" "C" "C" "C" "C" "C" "AAAAGGGCTC" ]
->header3 $ 2,2,1,1,1,7 $ [ "GT" "CT" "C" "C" "C" "ACCTCAG" ]
