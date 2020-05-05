@@ -2,7 +2,7 @@
 
 It's aim is to provide a way to re-build a genom starting from casual reads of it's sections.
 
-This program is part of a larger one and has the purpose of applying the so called 'flynn factorization' with some relative informations. My job was not to implement the factorization functions but to create a software capable of applying them to a large set of samples producing these informations. I was requested to do it specifically in C, cause the second section of the program was implemented through this lenguage. Tests and the program "sequential_program_main.c" and "run.c" are my products.
+This program is part of a larger one and has the purpose of applying the so called 'flynn factorization' with some relative information. My job was not to implement the factorization functions but to create a software capable of applying them to a large set of samples producing this information. I was requested to do it specifically in C, cause the second section of the program was implemented through this language. Tests and the program "sequential_program_main.c" and "run.c" are my products.
 
 Following a description of how it works and how to run it.
 
